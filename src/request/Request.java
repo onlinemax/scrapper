@@ -58,6 +58,7 @@ public class Request{
         StringBuilder builder = new StringBuilder("");
         while (reader.ready()){ 
             builder.append(reader.readLine());
+            builder.append("\n");
         } 
         return builder.toString();
     }
